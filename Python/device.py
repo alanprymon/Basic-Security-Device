@@ -18,7 +18,6 @@ if __name__ == "__main__":
             delete.clear()
             get = checked
 
-
         if not len(get) == 0:
             # makes sure something still remains in the string
             for x in get:
