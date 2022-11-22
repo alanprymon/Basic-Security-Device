@@ -1,28 +1,19 @@
-import data
+if __name__ == "__main__":
+    idx = 0
+    unlocked = False
 
-# Variables
-accessCode = 839831
-lockingCode = 839834
+    # Where main code starts
+    while True:
+        get = input()
 
-def enterKey(key):
-        if not len(key) == 0:
-            for x in key:
-                if x == "8" and data.idx == 0 or data.idx == 3:
-                    data.idx += 1
+        if not get.isdecimal():
+            # remove every character that is not a decimal (0-9)
+            pass
 
-
-def unlock():
-        if not data.unlocked:
-            data.unlocked = True
-            print("Unlocked")
-
-
-# Where main code starts
-while True:
-    get = input()
-
-    if not get.isdecimal():
-        # remove every character that is not a decimal (0-9)
-        pass
-
-    enterKey(get)
+        if not len(get) == 0:
+            # makes sure something still remains in the string
+            for x in get:
+                # handle the input string into individual characters
+                if x == "8" and idx == 0 or idx == 3:
+                    idx += 1
+                elif x == "3" and idx
