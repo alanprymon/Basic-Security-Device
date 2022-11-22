@@ -14,6 +14,25 @@ if __name__ == "__main__":
             # makes sure something still remains in the string
             for x in get:
                 # handle the input string into individual characters
-                if x == "8" and idx == 0 or idx == 3:
+                if x == "1" and idx == 5:
+                    if not unlocked:
+                        unlocked = True
+                        print("unlocked")
+                        idx = 0
+                elif x == "4" and idx == 5:
+                    if unlocked:
+                        unlocked = False
+                        print("locked")
+                        idx = 0
+                elif x == "8" and idx == 0 or idx == 3:
                     idx += 1
-                elif x == "3" and idx
+                elif x == "3" and idx == 1 or idx == 4:
+                    idx += 1
+                elif x == "9" and idx == 2:
+                    idx += 1
+                elif x == "8" and idx > 3 or idx < 3:
+                    idx = 1
+                elif x == "9" and idx == 5:
+                    idx = 3
+                else:
+                    idx = 0
