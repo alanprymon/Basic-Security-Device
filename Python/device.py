@@ -8,7 +8,16 @@ if __name__ == "__main__":
 
         if not get.isdecimal():
             # remove every character that is not a decimal (0-9)
-            pass
+            checked = get
+            delete = set()
+            for x in get:
+                if not x.isdecimal():
+                    delete.add(x)
+            for x in delete:
+                checked = checked.replace(x, "")
+            delete.clear()
+            get = checked
+
 
         if not len(get) == 0:
             # makes sure something still remains in the string
