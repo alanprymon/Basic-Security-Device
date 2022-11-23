@@ -14,9 +14,10 @@ This program has been run on and tested on thoroughly in Windows 11. It has not 
 
 ## Unit testing
 
-to run unit testing and coverage on windows 11 you need to go to the git clone folder that you made -> enter the folder "Python" -> right click in folder -> open in terminal (should look like ...\Basic-Security-Device\Python) -> type "pip install coverage" -> type "coverage run -m unittest discover" -> type "coverage report -m"
+to run unit testing and coverage on windows 11 you need to go to the git clone folder that you made -> enter the folder "Python" -> right click in folder -> open in terminal (should look like ...\Basic-Security-Device\Python) -> type "pip install coverage" -> type "coverage run -m unittest discover" -> type "coverage report -m". This is also assuming you have Python already installed if you install it.
 
 ## Other
 
-Author: Alan P Prymon
+Author: Alan P Prymon 
+
 licensing: The Unlicense
