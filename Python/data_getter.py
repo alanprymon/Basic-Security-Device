@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    rawdata = open("raw-data.txt", "r")
+    rawdata = open("raw_data.txt", "r")
     data = open("data.txt", "w")
     raw = rawdata.readlines()
     rawdata.close()

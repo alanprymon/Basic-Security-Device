@@ -14,7 +14,7 @@ if __name__ == "__main__":
                 get = str(random.randint(0, 9))
                 count += 1
             else:
-                file = open("raw-data.txt", "a")
+                file = open("raw_data.txt", "a")
                 file.write(str(count) + "\n")
                 file.close()
                 count = 0
