@@ -1,9 +1,27 @@
+import random
+
 if __name__ == "__main__":
     idx = 0
     unlocked = False
+    randomizer = False
+    count = 0
     # Where main code starts
     while True:
-        get = input()
+        if not randomizer:
+            get = input()
+        else:
+            if not unlocked:
+                get = str(random.randint(0, 9))
+                count += 1
+            else:
+                file = open("data.txt", "a")
+                file.write(str(count) + "\n")
+                file.close()
+                count = 0
+                get = "839834"
+
+        if len(get) == 0:
+            randomizer = True
 
         if not get.isdecimal():
             # remove every character that is not a decimal (0-9)
