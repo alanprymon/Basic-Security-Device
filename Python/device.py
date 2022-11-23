@@ -6,8 +6,6 @@ if __name__ == "__main__":
     while True:
         get = input()
 
-
-
         if not get.isdecimal():
             # remove every character that is not a decimal (0-9)
             checked = get
