@@ -16,6 +16,13 @@ This program has been run on and tested on thoroughly in Windows 11. It has not 
 
 to run unit testing and coverage on windows 11 you need to go to the git clone folder that you made -> enter the folder "Python" -> right click in folder -> open in terminal (should look like ...\Basic-Security-Device\Python) -> type "pip install coverage" -> type "coverage run -m unittest discover" -> type "coverage report -m". This is also assuming you have Python already installed if you install it.
 
+## Other files
+
+The other files that can be found in the folder "Python" are "data.txt", "data_getter", "device_random.py", "raw_data.txt", and the unit test file. 
+
+* data.txt - text file consisting of a random guesser trying to get in and its average number of tries, its min number of tries, and its max number of tries.
+* data_getter -
+
 ## Other
 
 Author: Alan P Prymon 
