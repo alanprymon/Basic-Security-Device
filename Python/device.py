@@ -1,3 +1,17 @@
+def only_number(check):
+    checked = check
+    if not check.isdecimal():
+        # remove every character that is not a decimal (0-9)
+
+        delete = set()
+        for x in check:
+            if not x.isdecimal():
+                delete.add(x)
+        for x in delete:
+            checked = checked.replace(x, "")
+        delete.clear()
+    return checked
+
 if __name__ == "__main__":
     idx = 0
     unlocked = False
@@ -5,17 +19,7 @@ if __name__ == "__main__":
     while True:
         get = input()
 
-        if not get.isdecimal():
-            # remove every character that is not a decimal (0-9)
-            checked = get
-            delete = set()
-            for x in get:
-                if not x.isdecimal():
-                    delete.add(x)
-            for x in delete:
-                checked = checked.replace(x, "")
-            delete.clear()
-            get = checked
+        get = only_number(get)
 
         for x in get:
             # handle the input string into individual characters
