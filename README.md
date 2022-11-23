@@ -21,7 +21,9 @@ to run unit testing and coverage on windows 11 you need to go to the git clone f
 The other files that can be found in the folder "Python" are "data.txt", "data_getter", "device_random.py", "raw_data.txt", and the unit test file. 
 
 * data.txt - text file consisting of a random guesser trying to get in and its average number of tries, its min number of tries, and its max number of tries.
-* data_getter -
+* data_getter - a python program that take the raw_data.txt file and does math to then output into the data.txt
+* device_random.py - python program very similar to "device.py" however this in this version if you enter a blank string then it tries to brunt force the security by throwing random strings at it until it break through where it then sends the count to a new line in raw_data.txt
+* raw_data.txt - a long list of numbers that are the amount of tries it took the random guesser to get through the security. The present file consists of nearly 50,000 attempts.
 
 ## Other
 
